@@ -2,10 +2,10 @@
 # vi: set ft=ruby :
 
 machines = {
-  "master"   => {"memory" => "2048", "cpu" => "1", "ip" => "100", "image" => "ubuntu/bionic64"},
-  "node01"   => {"memory" => "2048", "cpu" => "1", "ip" => "110", "image" => "ubuntu/bionic64"},
-  "node02"   => {"memory" => "1024", "cpu" => "1", "ip" => "120", "image" => "ubuntu/bionic64"},
-  "node03"   => {"memory" => "1024", "cpu" => "1", "ip" => "130", "image" => "ubuntu/bionic64"}
+  "master"   => {"memory" => "2048", "cpu" => "1", "ip" => "100", "image" => "bento/ubuntu-22.04"},
+  "node01"   => {"memory" => "2048", "cpu" => "1", "ip" => "110", "image" => "bento/ubuntu-22.04"},
+  "node02"   => {"memory" => "1024", "cpu" => "1", "ip" => "120", "image" => "bento/ubuntu-22.04"},
+  "node03"   => {"memory" => "1024", "cpu" => "1", "ip" => "130", "image" => "bento/ubuntu-22.04"}
 }
 
 Vagrant.configure("2") do |config|
